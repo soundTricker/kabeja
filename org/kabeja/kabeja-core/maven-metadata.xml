@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<metadata>
+  <groupId>org.kabeja</groupId>
+  <artifactId>kabeja-core</artifactId>
+  <versioning>
+    <release>0.5.0-SNAPSHOT-20151023</release>
+    <versions>
+      <version>0.5.0-SNAPSHOT-20151023</version>
+    </versions>
+    <lastUpdated>20151023151839</lastUpdated>
+  </versioning>
+</metadata>
