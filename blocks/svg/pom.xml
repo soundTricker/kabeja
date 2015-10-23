@@ -12,7 +12,7 @@
     <parent>
         <groupId>org.kabeja</groupId>
         <artifactId>kabeja</artifactId>
-        <version>0.5.0-SNAPSHOT</version>
+        <version>0.5.0-SNAPSHOT-20151023</version>
     </parent>
 
     <build>
@@ -37,27 +37,42 @@
         <dependency>
             <groupId>org.kabeja</groupId>
             <artifactId>kabeja-dxf</artifactId>
-            <version>0.5.0-SNAPSHOT</version>
+            <version>0.5.0-SNAPSHOT-20151023</version>
         </dependency>
         <dependency>
             <groupId>org.kabeja</groupId>
             <artifactId>kabeja-ui</artifactId>
-            <version>0.5.0-SNAPSHOT</version>
+            <version>0.5.0-SNAPSHOT-20151023</version>
         </dependency>
         <dependency>
             <groupId>org.apache.xmlgraphics</groupId>
             <artifactId>batik-swing</artifactId>
-            <version>1.8pre</version>
+            <version>1.8</version>
         </dependency>
         <dependency>
             <groupId>org.apache.xmlgraphics</groupId>
             <artifactId>batik-transcoder</artifactId>
-            <version>1.8pre</version>
+            <version>1.8</version>
         </dependency>
         <dependency>
             <groupId>org.apache.xmlgraphics</groupId>
             <artifactId>batik-js</artifactId>
-            <version>1.8pre</version>
+            <version>1.8</version>
+        </dependency>
+        <dependency>
+            <groupId>org.apache.xmlgraphics</groupId>
+            <artifactId>fop</artifactId>
+            <version>1.1</version>
+        </dependency>
+        <dependency>
+            <groupId>org.apache.avalon.framework</groupId>
+            <artifactId>avalon-framework-impl</artifactId>
+            <version>4.3.1</version>
+        </dependency>
+        <dependency>
+            <groupId>org.apache.avalon.framework</groupId>
+            <artifactId>avalon-framework-api</artifactId>
+            <version>4.3.1</version>
         </dependency>
     </dependencies>
 </project>
