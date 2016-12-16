@@ -10,7 +10,7 @@
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>
-      <module name="kabeja" target="1.3" />
+      <module name="kabeja" target="1.8" />
     </bytecodeTargetLevel>
   </component>
 </project>
