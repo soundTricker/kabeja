@@ -1,7 +1,11 @@
 package org.kabeja;
 
+import org.kabeja.dxf.DXFConstants;
 import org.kabeja.dxf.DXFDocument;
+import org.kabeja.dxf.DXFEntity;
+import org.kabeja.dxf.DXFLWPolyline;
 import org.kabeja.dxf.DXFLayer;
+import org.kabeja.dxf.DXFLineType;
 import org.kabeja.parser.DXFParser;
 import org.kabeja.parser.ParseException;
 import org.kabeja.parser.Parser;
@@ -13,6 +17,7 @@ import java.nio.file.Files;
 import java.nio.file.Path;
 import java.nio.file.Paths;
 import java.util.Iterator;
+import java.util.List;
 
 import static java.nio.file.Files.newInputStream;
 
@@ -36,12 +41,18 @@ public class Dev {
 			while (it.hasNext()) {
 				DXFLayer layer = (DXFLayer) it.next();
 
-				Iterator typeIt = layer.getDXFEntityTypeIterator();
+				List<DXFEntity> entities = layer.getDXFEntities(DXFConstants.ENTITY_TYPE_LWPOLYLINE);
 
+				for (DXFEntity entity : entities) {
+					System.out.println(entity);
+					System.out.println(entity.getID());
+				}
+
+				/*Iterator typeIt = layer.getDXFEntityTypeIterator();
 				while (typeIt.hasNext()) {
 					Object obj = typeIt.next();
 					System.out.println(obj);
-				}
+				}*/
 			}
 
 		} catch (IOException | ParseException e) {
