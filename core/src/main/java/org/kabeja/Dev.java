@@ -1,6 +1,7 @@
 package org.kabeja;
 
 import org.kabeja.dxf.parser.SAXDXFParserBuilder;
+import org.kabeja.parser.Parser;
 
 import java.io.BufferedInputStream;
 import java.io.IOException;
@@ -20,15 +21,12 @@ public class Dev {
         Path devFile = Paths.get("C:\\Users\\benjaminaaron\\git\\postvis\\testfiles\\dxf\\dev.dxf");
         //System.out.println(Files.exists(devFile));
 
-        BufferedInputStream bis = null;
-        try {
-            bis = new BufferedInputStream(newInputStream(devFile));
+        try (BufferedInputStream bis = new BufferedInputStream(newInputStream(devFile))){
+
+            Parser parser = SAXDXFParserBuilder.buildFromStream(bis);
+
         } catch (IOException e) {
             e.printStackTrace();
         }
-
-        //SAXDXFParserBuilder.buildFromStream(bis);
-
     }
-
 }
