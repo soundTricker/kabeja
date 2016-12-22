@@ -4,4 +4,6 @@ target/
 .settings/
 .classpath
 bin/
-.idea/
+**/.idea/workspace.xml
+**/.idea/tasks.xml
+
